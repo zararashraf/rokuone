@@ -11,7 +11,7 @@ export default function DropDown({text, icon, options}) {
   return (
     <Menu as="div" className="relative inline-block text-left">
       <div>
-        <Menu.Button className="inline-flex justify-center w-full px-2 py-2 text-sm font-medium text-black hover:border-teal-900 duration-500">
+        <Menu.Button className="inline-flex justify-center w-full px-2 py-2 text-sm font-medium text-stone-800">
           <FontAwesomeIcon icon={icon} className="mr-1 h-5 w-5 text-xs" />
           {text}  
           <FontAwesomeIcon icon={faChevronDown} className="ml-1 h-5 w-2 text-xs" />
@@ -27,7 +27,7 @@ export default function DropDown({text, icon, options}) {
         leaveFrom="transform opacity-100 scale-100"
         leaveTo="transform opacity-0 scale-95"
       >
-        <Menu.Items className="origin-top-right absolute right-0 mt-2 w-56 shadow-lg bg-white ring-1 ring-black ring-opacity-5 focus:outline-none">
+        <Menu.Items className="origin-top-right absolute right-0 mt-2 w-56 shadow-lg bg-white hover:text-sky-600 ring-1 ring-black ring-opacity-5 focus:outline-none">
           <div className="py-1">
             {options.map((option) => (
                 <Menu.Item>
