@@ -11,7 +11,7 @@ export default function DropDown({text, icon, options}) {
   return (
     <Menu as="div" className="relative inline-block text-left">
       <div>
-        <Menu.Button className="inline-flex justify-center w-full px-2 py-2 text-sm font-medium text-neutral-400 hover:text-black duration-500">
+        <Menu.Button className="inline-flex justify-center w-full px-2 py-2 text-sm font-medium text-black hover:border-teal-900 duration-500">
           <FontAwesomeIcon icon={icon} className="mr-1 h-5 w-5 text-xs" />
           {text}  
           <FontAwesomeIcon icon={faChevronDown} className="ml-1 h-5 w-2 text-xs" />
@@ -39,7 +39,8 @@ export default function DropDown({text, icon, options}) {
                       'block px-4 py-2 text-sm'
                     )}
                   >
-                    {option}
+                    {option.icon ? <FontAwesomeIcon icon={option.icon} className="mr-1 text-xs" /> : ''}
+                    {option.text}
                   </a>
                 )}
               </Menu.Item>

@@ -1,12 +1,21 @@
 import DropDown from "./Dropdown"
-import { faChartSimple, faMagnifyingGlass, faRobot, faGlobe, faStar } from '@fortawesome/free-solid-svg-icons'
-import { faMailchimp, faYoutube } from "@fortawesome/free-brands-svg-icons"
+import { faChartSimple, faMagnifyingGlass, faRobot, faGlobe, faStar, faParagraph } from '@fortawesome/free-solid-svg-icons'
+import { faMailchimp, faYoutube, faYoutubeSquare } from "@fortawesome/free-brands-svg-icons"
 
 
 const Navbar = () => {
   const seoItems = ['Keyword Research Tool', 'Bulk Keyword Data Tool', 'Questions Explorer', 'Backlinks Checker', 'Backlinks List', 'High CPC Keywords', 'SEO Analyzer'];
-  const youtubeItems = ['YouTube Keyword Tool', 'Topic Explorer'];
-  const aiItems = ['Content Generator', 'Paragraph Translator'];
+  
+  const youtubeItems = [
+    { 'icon': faYoutubeSquare, 'text': 'YouTube Keyword Tool' },
+    { 'icon': faParagraph, 'text': 'Topic Explorer' }
+  ];
+
+  const aiItems = [
+    { 'icon': faYoutubeSquare, 'text': 'Content Generator' },
+    { 'icon': faParagraph, 'text': 'Paragraph Translator' }
+  ];
+
   const emailItems = ['Email Validation Tool', 'Bulk Email Validation', 'Email TXT Extraction Tool', 'Warmup Schedule Generator', 'Subject Line Tester'];
   const discoverItems = ['High CPC Keywords', 'Influencers', 'Instagram Hashtags', 'Affiliate Programs'];
   const webtoolItems = ['Privacy Policy Generator', 'Terms & Conditions Generator', 'Fast Domain Search', 'Text Sharing'];
