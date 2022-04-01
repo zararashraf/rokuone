@@ -35,11 +35,11 @@ export default function DropDown({text, icon, options}) {
                   <a
                     href="#"
                     className={classNames(
-                      active ? 'bg-gray-300 duration-800' : 'text-gray-700',
+                      active ? 'bg-gray-300' : 'text-gray-700',
                       'block px-4 py-2 text-sm'
                     )}
                   >
-                    {option.icon ? <FontAwesomeIcon icon={option.icon} className="mr-1 text-xs" /> : ''}
+                    <FontAwesomeIcon icon={option.icon} className="mr-1 text-xs" />
                     {option.text}
                   </a>
                 )}

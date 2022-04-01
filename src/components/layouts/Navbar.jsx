@@ -1,17 +1,17 @@
 import DropDown from "./Dropdown"
-import { faChartSimple, faMagnifyingGlass, faRobot, faGlobe, faStar, faParagraph } from '@fortawesome/free-solid-svg-icons'
+import { faChartSimple, faMagnifyingGlass, faRobot, faGlobe, faStar, faParagraph, faGlasses, faMagnifyingGlassChart, faListUl } from '@fortawesome/free-solid-svg-icons'
 import { faMailchimp, faYoutube, faYoutubeSquare } from "@fortawesome/free-brands-svg-icons"
 
 
 const Navbar = () => {
   const seoItems = [
-    { 'icon': '', 'text': 'Keyword Research Tool' }, 
+    { 'icon': faGlasses, 'text': 'Keyword Research Tool' }, 
     { 'icon': '', 'text': 'Bulk Keyword Data Tool' }, 
     { 'icon': '', 'text': 'Questions Explorer' }, 
     { 'icon': '', 'text': 'Backlinks Checker' }, 
-    { 'icon': '', 'text': 'Backlinks List' }, 
+    { 'icon': faListUl, 'text': 'Backlinks List' }, 
     { 'icon': '', 'text': 'High CPC Keywords' },
-    { 'icon': '', 'text': 'SEO Analyzer' }
+    { 'icon': faMagnifyingGlassChart, 'text': 'SEO Analyzer' }
   ];
   
   const youtubeItems = [
