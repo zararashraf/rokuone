@@ -1,7 +1,8 @@
 import logo from './logo.svg';
 import './App.css';
 import React from 'react';
-import Navbar from './components/Navbar';
+import Navbar from './components/layouts/Navbar';
+import Footer from './components/layouts/Footer';
 
 function App() {
   return (
@@ -10,6 +11,7 @@ function App() {
       <h1 className="text-3xl font-bold underline">
         Hello world!
       </h1>
+      <Footer />
     </React.Fragment>
   );
 }
