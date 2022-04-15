@@ -5,10 +5,10 @@ const Header = () => {
   const handleClick = () => setMenu(!menu)
 
   return (
-    <nav className='w-screen h-[80px] z-10 bg-zinc-200 fixed drop-shadow-lg'>
+    <nav className='w-screen h-[80px] z-10 bg-white fixed shadow-md border-zinc-500'>
         <div className='px-5 md:px-12 flex justify-between items-center w-full h-full'>
             <div className='flex items-center'>
-                <h1 className='font-bold text-cyan-600 font-sans mr-4 sm:text-2xl'>SuperSEOTools</h1>    
+                <h1 className='font-bold text-sky-600 font-sans mr-4 sm:text-2xl'>SuperSEOTools</h1>    
             </div>
             <ul className='hidden md:flex'>
                 <li>SEO</li>
