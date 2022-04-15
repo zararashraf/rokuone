@@ -1,4 +1,5 @@
 import { faPencil, faCopy, faA, faFileWord } from '@fortawesome/free-solid-svg-icons'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import Card from '../components/Card'
 
 
@@ -9,7 +10,6 @@ const Home = () => {
             <div className='heading text-center py-4'>
                 <h1 className='text-3xl text-gray-600 font-semibold py-2'><span className='text-sky-600'>Text Content</span> Tools</h1>
                 <p className='text-xl text-gray-800 font-light'>A complete set of text tools is now at your fingertips. Check plagiarism, rewrite an article, run a spell checker, count words or change text case.</p>
-
                 <div className='grid grid-cols-4 gap-4'>
                     <Card icon={faCopy} text='Plagiarism Checker' />
                     <Card icon={faPencil} text='Article Rewriter' />

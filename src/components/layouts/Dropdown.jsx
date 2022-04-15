@@ -9,7 +9,7 @@ function classNames(...classes) {
 
 export default function DropDown({text, icon, options}) {
   return (
-    <Menu as="div" className="relative inline-block text-left">
+    <Menu as="div" className="relative inline-block text-left mx-3">
       <div>
         <Menu.Button className="inline-flex justify-center w-full px-2 py-2 text-sm font-medium text-stone-800">
           <FontAwesomeIcon icon={icon} className="mr-1 h-5 w-5 text-xs" />

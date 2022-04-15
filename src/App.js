@@ -6,18 +6,18 @@ import Navbar from './components/layouts/Navbar';
 import Footer from './components/layouts/Footer';
 import Home from './pages/Home'
 import NotFound from './pages/NotFound'
+import Terms from './pages/Terms';
+import KeywordResearchTool from './pages/seo/KeywordResearchTool'
+import Header from './components/layouts/Header';
+import Hero from './components/layouts/Hero';
 
 function App() {
   return (
-    <Router>
-      <Navbar />
-      <Routes>
-        <Route path='/' element={<Home />} />
-        <Route path='/notfound' element={<NotFound />} />
-        <Route path='/*' element={<NotFound />} />
-      </Routes>
+    <React.Fragment>
+      <Header />
+      <Hero />
       <Footer />
-    </Router>
+    </React.Fragment>
   );
 }
 
